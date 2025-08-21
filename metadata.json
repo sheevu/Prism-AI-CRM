@@ -1,0 +1,7 @@
+{
+  "name": "PRISM AI - Bilingual CRM",
+  "description": "A bilingual (Hindi + English) CRM web application designed for Indian MSME business owners and managers to track leads, customers, sales, transactions, and automate communication.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

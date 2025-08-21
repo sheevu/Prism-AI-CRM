@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM AI - Bilingual CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'cream': '#FEFDFB',
+              'kpi-blue': '#007BFF',
+              'kpi-green': '#28A745',
+              'kpi-yellow': '#FFC107',
+              'kpi-red': '#DC3545',
+              'kpi-purple': '#6F42C1',
+              primary: {
+                '50': '#eff6ff',
+                '100': '#dbeafe',
+                '200': '#bfdbfe',
+                '300': '#93c5fd',
+                '400': '#60a5fa',
+                '500': '#3b82f6',
+                '600': '#2563eb',
+                '700': '#1d4ed8',
+                '800': '#1e40af',
+                '900': '#1e3a8a',
+                '950': '#172554',
+              },
+            },
+            animation: {
+                'gradient': 'animate-gradient 10s ease infinite',
+                'fadeInUp': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+                'animate-gradient': {
+                    '0%, 100%': { backgroundPosition: '0% 50%' },
+                    '50%': { backgroundPosition: '100% 50%' },
+                },
+                'fadeInUp': {
+                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+       body {
+        background-color: #F9FAFB;
+      }
+      .dark body {
+        background-color: #0D1117;
+      }
+      .bg-header-gradient {
+        background: linear-gradient(90deg, #8A2BE2 0%, #00BFFF 100%);
+      }
+      .bg-login-gradient {
+        background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c4966);
+        background-size: 400% 400%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "recharts": "https://esm.sh/recharts@^3.1.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.540.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.8.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
